@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Marks Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #bbdefb);
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #0d47a1;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #90caf9;
+        }
+        button {
+            background-color: #2196f3;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1976d2;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #1b5e20;
+        }
+        .error {
+            color: #d32f2f;
+        }
+        .warning {
+            color: #f57c00;
+        }
+    </style>
+</head>
+<body>
+    <h1>📚 Student Marks Prediction</h1>
+
+    <form action="/predict" method="post">
+        <label>Enter Study Hours:</label><br>
+        <input type="number" step="any" name="hours" placeholder="e.g. 5" required>
+        <br>
+        <button type="submit">Predict Marks</button>
+    </form>
+
+    {% if prediction_text %}
+        {% if "⚠️" in prediction_text %}
+            <h2 class="warning">{{ prediction_text }}</h2>
+        {% elif "❌" in prediction_text %}
+            <h2 class="error">{{ prediction_text }}</h2>
+        {% else %}
+            <h2>{{ prediction_text }}</h2>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
