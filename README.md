@@ -1,4 +1,4 @@
-# 🎓 Student Marks Prediction
+# 🎓 Student Marks Prediction Using Machine Learning
 
 A simple Machine Learning web app that predicts student marks based on study hours.
 
