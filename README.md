@@ -2,12 +2,15 @@
 
 A simple Machine Learning web app that predicts student marks based on study hours.
 
+## 🚀 Live Demo
+👉 [Click here to view live](https://student-marks-prediction-1-gsvb.onrender.com/)
+
 ## 🔍 Features
 - Input number of study hours
 - Predict student marks instantly
 - Built using Flask & deployed on Render
 
-## 🧠 Tech Stack
+## 🧠 Tech 
 - Python
 - Flask
 - Scikit-learn
@@ -26,5 +29,3 @@ This project uses a simple dataset (`data.csv`) containing two columns: **Hours*
 | 10    | 90    |
 
 📂 **Full dataset:** [data.csv](data.csv)
-## 🚀 Live Demo
-👉 [Click here to view live](https://student-marks-prediction-1-gsvb.onrender.com/)
