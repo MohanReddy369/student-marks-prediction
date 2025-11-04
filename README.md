@@ -13,7 +13,6 @@ A simple Machine Learning web app that predicts student marks based on study hou
 - Flask
 - Scikit-learn
 - HTML, CSS
-- Render (for deployment)
 ## 📊 Dataset
 
 This project uses a simple dataset (`data.csv`) containing two columns: **Hours** (number of study hours) and **Marks** (score obtained by students).
